@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Page from './components/Page';
+import React, {useState} from 'react';
+import './styles.css';
+
 
 function App() {
+  const [previewMode, setPreviewMode] = useState(false);
+
+  const handleBtnClick = (e) => {
+    let boolean;
+    if (e.target.name === 'edit') boolean = false;
+    if (e.target.name === 'preview') boolean = true;
+    setPreviewMode(boolean);
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <h1>RÉSUMÉ CREATOR</h1>
+      <div className='button-wrapper'>
+        <button name='edit' onClick={handleBtnClick}>Edit Résumé</button>
+        <button name='preview' onClick={handleBtnClick}>Preview Résumé</button>
+      </div>
+
+      <Page previewMode={previewMode} />
     </div>
   );
 }
+
 
 export default App;
