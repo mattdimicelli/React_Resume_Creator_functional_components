@@ -19,9 +19,9 @@ The full requirements for the project from the Odin Project curriculum can be se
 
 ### Links
 
-- [Live site](https://mattdimicelli.github.io/cv-project/) 
+- [Live site](https://mattdimicelli.github.io/React_Resume_Creator_class_components/) 
   - Note: the live site is actually the original, class-component version
-- [Repo](https://github.com/mattdimicelli/cv_project_functional_components)
+- [Repo](https://github.com/mattdimicelli/React_Resume_Creator_functional_components/)
 
 ## My process
 
@@ -37,7 +37,7 @@ The full requirements for the project from the Odin Project curriculum can be se
 
 This was practice in regards to both class-based components and (stateful) 
 functional components with hooks, since I was converting from one to the other.
-See the original project [here](https://github.com/mattdimicelli/cv-project) for 
+See the original project [here](https://github.com/mattdimicelli/React_Resume_Creator_class_components) for 
 a much more in-depth description about what I learned.  
 
 
